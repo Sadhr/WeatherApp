@@ -1,0 +1,152 @@
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    color: #ffffff;
+    font-family: Macondo;
+}
+
+.dataWeather {
+    display: none;
+    text-shadow: 7px 5px 5px #C8E6C9;
+}
+
+#dateStyle {
+    text-shadow: 7px 5px 5px #C8E6C9;
+}
+
+#currDate {
+    float: left;
+}
+
+#currTime {
+    float: right;
+}
+
+#line {
+    border-width: .3em;
+}
+
+#icon {
+    font-size: 9em;
+}
+
+#city {
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+#weather {
+    font-size: 2em;
+}
+
+#temperature {
+    font-size: 7em;
+    margin-left: .3em;
+}
+
+#tempUnity {
+    font-size: 1.7em;
+}
+
+#iconPerssure {
+    margin-left: -3em;
+}
+
+#secondData {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 2em;
+}
+
+#humStyle {
+    margin-left: -6em;
+}
+
+
+/* switch between c and f button style*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #89bf5e;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 0;
+    bottom: -9px;
+    background-color: #89bf5e;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #89bf5e;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #89bf5e;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 90px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/*End of switch button*/
+
+
+/* Loader style */
+
+.fa-3x {
+    font-size: 10em;
+}
+
+.loader {
+    margin-top: 1.5em;
+}
+
+footer {
+    margin-top: 11em;
+    text-shadow: 7px 5px 5px #C8E6C9;
+}
+
+a {
+    color: #89bf5e;
+}

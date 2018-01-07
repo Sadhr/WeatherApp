@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/d58215cbd5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons-wind.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <title>Local Weahter App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <hr id="line">
+        </div>
+        <div>
+            <span id="currDate">{date}</span>
+            <span id="currTime">{time}</span>
+        </div>
+
+        <div class="dataWeather weather">
+
+            <div class="text-center">
+                <div id="city">
+                    {City and code Country}
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div>
+                    <span>
+                  <i id="icon" class="wi wi-day-sunny"></i>
+               </span>
+                    <span id="temperature">
+                   {temperature}
+                   </span>
+                    <span id="tempUnity">
+
+                  </span>
+                </div>
+            </div>
+
+            <div class="text-center" id="weather">
+                <span>
+             {current weather}
+            </span>
+            </div>
+
+            <div class="row" id="secondData">
+                <div class="col-xs-3 col-xs-offset-4">
+                    <span id="iconPerssure">
+                  <i class=" wi wi-barometer"></i>
+                </span>
+                    <span id="pressure">
+                   {pressure}
+               </span>
+                </div>
+
+                <div class="col-xs-2 col-xs-offset-2">
+                    <div id="humStyle">
+                        <span>
+                  <i class="wi wi-humidity"></i>
+                </span>
+                        <span id="humidity">
+                   {humidity}
+               </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <span class="btnLettre">°C</span>
+                <label class="switch">
+              <input type="checkbox">
+              <div class="slider round"></div>
+              </label>
+                <span>°F</span>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-4">
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw loader"></i>
+                <span class="sr-only"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer " align="center">
+        <div class="container">
+            <span id="footerText">
+          Devlopped by HARAKAT Saad
+        </span>
+            <ul class="list-inline">
+                <li>
+                    <a href="https://twitter.com/saadharakat" class="fa fa-twitter" target=_blank></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sadhr" class="fa fa-github" target=_blank></a>
+                </li>
+                <li>
+                    <a href="https://www.freecodecamp.com/sadhr" class="fa fa-fire" target=_blank></a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/SadHR/" class="fa fa-codepen" target=_blank></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/saad-harakat-b1a99080/" class="fa fa-linkedin" target=_blank></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 // Get the IP information
-$.getJSON('http://ip-api.com/json', function(data) {
+$.getJSON('https://ipapi.co/json/', function(data) {
         console.log("success IP: ", data);
-        getWeather(data.lat, data.lon);
+        getWeather(data.latitude, data.longitude);
     }) // End of getting Ip information
 
 // Weather information

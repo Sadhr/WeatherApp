@@ -143,8 +143,13 @@ input:checked+.slider:before {
 }
 
 footer {
-    margin-top: 11em;
     text-shadow: 7px 5px 5px #C8E6C9;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
 }
 
 a {

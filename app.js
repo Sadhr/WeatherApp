@@ -10,7 +10,7 @@ function getWeather(latitude, longitude) {
     var appid = "&APPID=db7e39bc1dbf44fd0909996f88eee48d";
     var units = "&units=metric";
     var weather, city, iconCode, celsius, weatherDescription, codeCountry, fahrenheit;
-    var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "" + appid + "" + units + "";
+    var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "" + appid + "" + units + "";
 
     // Get the weather API
     $.getJSON(url, function(data) {
